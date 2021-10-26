@@ -1,16 +1,10 @@
 {
   "pokemons": [
     {
-      "id": 2,
-      "name": "ivysaur",
-      "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
-      "pokeType": "grass"
-    },
-    {
-      "id": 3,
       "name": "venusaur",
       "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
-      "pokeType": "grass"
+      "pokeType": "asd",
+      "id": 3
     },
     {
       "id": 4,
@@ -173,6 +167,12 @@
       "name": "nidorina",
       "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
       "pokeType": "poison"
+    },
+    {
+      "name": "vo",
+      "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "pokeType": "va",
+      "id": 31
     }
   ]
 }
