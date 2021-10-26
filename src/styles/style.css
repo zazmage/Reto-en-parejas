@@ -1,156 +1,169 @@
-
-body{
-    background: rgb(255, 111, 111);
+* {
+  box-sizing: border-box;
 }
 
-.title-cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font: bold 2.5rem serif;
-    background: rgb(176, 55, 180);
-    margin: 20px;
+body {
+  background: rgb(255, 111, 111);
 }
 
-.main-title{
-    font: bold 2.5rem serif;
+.title-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 2.5rem serif;
+  background: rgb(176, 55, 180);
+  margin: 20px;
 }
 
+.main-title {
+  font: bold 2.5rem serif;
+}
 
 /* Estilos formulario ---------------------------------- */
-.form-cont{
-    margin: 20px;
-    float: left;
+.form-cont {
+  margin: 20px;
+  float: left;
 }
 
-.main-form{
-    display: flex;
-    flex-direction: column;
-    background: rgba(255, 0, 0, 0.671);
-    width: 400px;
-    height: 600px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    box-shadow: 0 0 10px black;
-  }
-
-  .text-box{
-    display: flex;
-    width: 300px;
-    height: 50px;
-    border-radius: 5px;
-    border:none;
-    font: bold 1.5rem serif;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-.form-title-cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    font: bold 2.5rem serif;
-  }
-
-.form-title{
-    font: bold 2.5rem serif;
-  }
-
-  .label{
-    font: bold 1.3rem serif;
-  }
-
-.btn{
-    margin-top: 30px;
-    width: 200px;
-    height: 40px;
-    font: bold 1.2rem serif;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  /* estilos main --------------------------------------*/
-
-.fil-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+.main-form {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 0, 0, 0.671);
+  width: 400px;
+  height: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
 }
 
-.fil-box{
-    display: flex;
-    height: 20px;
-    border-radius: 5px;
-    border:2px solid;
-    font: bold 1rem serif;
-    text-align: center;
+.text-box {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font: bold 1.5rem serif;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.fil-btn{
-    width: 100px;
-    height: 25px;
-    margin-left: 5px;
-    font: bold 1rem serif;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    cursor: pointer;
+.form-title-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font: bold 2.5rem serif;
+}
+
+.form-title {
+  font: bold 2.5rem serif;
+}
+
+.label {
+  font: bold 1.3rem serif;
+}
+
+.btn {
+  margin-top: 30px;
+  width: 200px;
+  height: 40px;
+  font: bold 1.2rem serif;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.normal-btn {
+  height: 40px;
+  font: bold 1.2rem serif;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* estilos main --------------------------------------*/
+
+.fil-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.fil-box {
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid;
+  font: bold 1rem serif;
+  text-align: center;
+}
+
+.fil-btn {
+  width: 100px;
+  height: 30px;
+  margin-left: 5px;
+  font: bold 1rem serif;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* card---------------------------------------- */
 
-.card{
-    
-    margin-top: 70px;
-    width: 250px;
-    background-color:rgb(176, 55, 180);
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    box-shadow: 0 0 10px black;
-    margin-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    float: left;
+.card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 250px;
+  background-color: rgb(176, 55, 180);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: 0 0 10px black;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  float: left;
 }
 
-.card-img{
-    max-width: 100%;
-    
+.card-img {
+  max-width: 100%;
 }
 
-.des-cont{
-    margin: 1rem;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.589);
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgb(176, 55, 180);
-    border-radius: 3px;
+.des-cont {
+  text-align: center;
+  margin: 1rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.589);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(176, 55, 180);
+  border-radius: 5px;
 }
 
-.card-title, .card-text{
-    text-align: center;
-    font: bold 1.5rem serif;
+.card-title,
+.card-text {
+  text-align: center;
+  font: bold 1.5rem serif;
 }
 
-.card-btn{
-    width: 80px;
-    height: 30px;
-    font: bold 1rem serif;
-    background: rgba(255, 255, 255, 0.356);
-    color: rgb(0, 0, 0);
-    border: 1px solid;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0px 0px 16px 16px;
+.card-btn {
+  width: 80px;
+  height: 30px;
+  font: bold 1rem serif;
+  background: rgba(255, 255, 255, 0.356);
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 0px 16px 16px;
 }
 
-.card-btn:hover{
-    background: rgba(88, 78, 88, 0.192);
+.card-btn:hover {
+  background: rgba(88, 78, 88, 0.192);
 }

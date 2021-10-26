@@ -114,7 +114,7 @@ d.addEventListener("click", async (e) => {
     const $mainForm = d.querySelector(".main-form"),
       $formTitle = d.querySelector(".form-title");
 
-    $formTitle.textContent = "Editar pokemon";
+    $formTitle.textContent = "Editar Pokemon";
     $mainForm.name.value = e.target.dataset.name;
     $mainForm.image.value = e.target.dataset.imgUrl;
     $mainForm.pokeType.value = e.target.dataset.pokeType;
