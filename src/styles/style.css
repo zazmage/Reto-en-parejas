@@ -167,7 +167,7 @@ body{
     font: bold 1.5rem serif;
 }
 
-.card-btn{
+.ed-btn, .del-btn{
     width: 80px;
     height: 30px;
     font: bold 1rem serif;
@@ -179,7 +179,7 @@ body{
     margin: 0px 0px 16px 16px;
 }
 
-.card-btn:hover{
+.ed-btn:hover, .del-btn:hover{
     background: rgba(88, 78, 88, 0.192);
 }
 
