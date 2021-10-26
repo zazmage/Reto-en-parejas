@@ -29,10 +29,9 @@ const RestFetch = {
         body: JSON.stringify(data),
       };
       res = await fetch(url, options);
-      json = await res.json();
 
       if (!res.ok) throw { status: res.status, statusText: res.statusText };
-      return json.result;
+      location.reload();
     } catch (err) {
       let message = err.statusText || "Ocurrió un error";
       console.log(`Error ${err.status}: ${message}`);
@@ -40,23 +39,24 @@ const RestFetch = {
   },
 
   // UPDATE -PUT
-  putData: async (url, id) => {
+  putData: async (url, id, data) => {
     try {
       let options = {
         method: "PUT",
         headers: {
           "content-type": "application/json; charset=utf-8",
         },
-        body: JSON.stringify({
+        body: JSON.stringify(data),
+        /* body: JSON.stringify({
           nombre: e.target.nombre.value,
           constelacion: e.target.constelacion.value,
-        }),
+        }), */
       };
-      res = await fetch(`${url}${id}`, options);
+      res = await fetch(`${url}/${id}`, options);
       json = await res.json();
 
       if (!res.ok) throw { status: res.status, statusText: res.statusText };
-      return json.result;
+      location.reload();
     } catch (err) {
       let message = err.statusText || "Ocurrió un error";
       console.log(`Error ${err.status}: ${message}`);
