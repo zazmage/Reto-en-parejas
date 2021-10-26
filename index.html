@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/styles/normalize.css">
-  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="stylesheet" href="src/styles/style.css"> 
   <title>Aqui va el título</title>
 </head>
 
@@ -19,60 +19,56 @@
 
   <aside class="form-cont">
     <button class="mainmenubtn">Formulario</button>
-
     <form class="main-form">
       <div class="form-title-cont">
         <h2 class="form-title">Agregar</h2>
       </div>
 
       <label for="nombre" class="label">Nombre
-        <input type="text" name="name" id="name" class="text-box" placeholder="Nombre" required>
+        <input type="text" name="name" id="name" class="text-box" placeholder="Nombre">
       </label>
 
       <label for="image" class="label">Url imágen
-        <input type="text" name="image" id="image" class="text-box" placeholder="URL" required>
+        <input type="text" name="image" id="image" class="text-box" placeholder="URL">
       </label>
 
       <label for="poke-type" class="label">Tipo de pokemon
-        <input type="text" name="poke-type" id="poke-type" class="text-box" placeholder="Tipo" required>
+        <input type="text" name="pokeType" id="pokeType" class="text-box" placeholder="Tipo">
       </label>
 
-      <button id="add-ed-btn" class="btn">Agregar</button>
+      <input type="hidden" name="id">
+
+      <button type="submit" id="main-btn" class="btn">Agregar</button>
+
 
     </form>
   </aside>
 
-  <template id="card-temp">
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" class="card-img">
-      <div class="des-cont">
-        <h3 class="card-title"></h3>
-        <p class="card-text"></p>
-        <button id="ed-btn" class="ed-btn"></button>
-        <button id="del-btn" class="del-btn"></button>
-      </div>
-    </div>
-  </template>
 
-  <main id="card-cont">
+  <main id="main-cont">
     <form class="fil-form">
       <input type="text" name="filter" id="filter" class="fil-box" placeholder="Filtro" required>
       <button id="fil-btn" class="fil-btn">Filtrar</button>
     </form>
 
-     <!-- Imágen de ejemplo -->
-     <!-- <div class="card">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" class="card-img">
-      <div class="des-cont">
-        <h3 class="card-title">Bulbasaur</h3>
-        <p class="card-text">Grass</p>
-        <button id="ed-btn" class="card-btn">Editar</button>
-        <button id="del-btn" class="card-btn">Eliminar</button>
+    <template id="card-temp">
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt=""
+          class="card-img">
+        <div class="des-cont">
+          <h3 class="card-title"></h3>
+          <p class="card-text"></p>
+          <button class="ed-btn" value="edit">Edit</button>
+          <button class="del-btn" value="delete">Delete</button>
+        </div>
       </div>
-    </div> -->
+    </template>
+
+    <div id="card-cont"></div>
+
   </main>
 
-  <script src="src/scripts/index.js"></script>
+  <script src="src/scripts/index.js" type="module"></script>
 </body>
 
 </html>
