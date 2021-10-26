@@ -39,10 +39,30 @@ body{
     display: none;
   }
 
+
+/* menú desplegable------------------------------------------------------ */
+
+.mainmenubtn {
+    position: fixed;
+    background-color: rgb(106, 106, 167);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding:10px;
+    margin-top:10px;
+    z-index: 9999;
+}
+
+.mainmenubtn:hover {
+    background-color: rgb(158, 158, 192);
+}
+
 .form-cont:hover .main-form{
     display: flex;
     transition: 4s;
   }
+/* --------------------------------------- */
 
   .text-box{
     display: flex;
@@ -163,21 +183,3 @@ body{
     background: rgba(88, 78, 88, 0.192);
 }
 
-
-/* ------------------------------------------------------ */
-
-.mainmenubtn {
-    position: fixed;
-    background-color: rgb(106, 106, 167);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    padding:10px;
-    margin-top:10px;
-    z-index: 9999;
-}
-
-.mainmenubtn:hover {
-    background-color: rgb(158, 158, 192);
-}
