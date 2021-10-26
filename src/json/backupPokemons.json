@@ -1,6 +1,12 @@
 {
   "pokemons": [
     {
+      "id": 1,
+      "name": "bulbasaur",
+      "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "pokeType": "grass"
+    },
+    {
       "id": 2,
       "name": "ivysaur",
       "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
