@@ -3,7 +3,7 @@
     {
       "name": "venusaur",
       "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
-      "pokeType": "asd",
+      "pokeType": "animalito",
       "id": 3
     },
     {
@@ -169,9 +169,9 @@
       "pokeType": "poison"
     },
     {
-      "name": "vo",
+      "name": "bulbasaur",
       "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "pokeType": "va",
+      "pokeType": "grass",
       "id": 31
     }
   ]

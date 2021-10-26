@@ -1,7 +1,7 @@
-
-body{
-    background: rgb(255, 111, 111);
+* {
+  box-sizing: border-box;
 }
+
 
 .title-cont{
     display: flex;
@@ -11,12 +11,16 @@ body{
     font: bold 2.5rem serif;
     background:rgba(176, 55, 180, 0.747);
     
+
+body {
+  background: rgb(255, 111, 111);
 }
 
-.main-title{
-    font: bold 2.5rem serif;
-}
 
+
+.main-title {
+  font: bold 2.5rem serif;
+}
 
 /* Estilos formulario ---------------------------------- */
 .form-cont{
@@ -131,10 +135,23 @@ body{
     color: rgb(0, 0, 0);
     border-radius: 10px;
     cursor: pointer;
+
+
+
+.normal-btn {
+  height: 40px;
+  font: bold 1.2rem serif;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-/* card---------------------------------------- */
 
+
+
+/* card---------------------------------------- */
 .card{
     margin: 30px 30px 0px 50px;
     width: 250px;
@@ -181,5 +198,21 @@ body{
 
 .ed-btn:hover, .del-btn:hover{
     background: rgba(88, 78, 88, 0.192);
+
+
+.card-btn {
+  width: 80px;
+  height: 30px;
+  font: bold 1rem serif;
+  background: rgba(255, 255, 255, 0.356);
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 0px 16px 16px;
+}
+
+.card-btn:hover {
+  background: rgba(88, 78, 88, 0.192);
 }
 
