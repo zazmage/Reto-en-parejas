@@ -19,6 +19,7 @@
 
   <aside class="form-cont">
     <form class="main-form">
+
       <div class="form-title-cont">
         <h2 class="form-title">Agregar</h2>
       </div>
@@ -26,12 +27,15 @@
       <label for="nombre" class="label">Nombre
         <input type="text" name="name" id="name" class="text-box" placeholder="Nombre" required>
       </label>
+
       <label for="image" class="label">Url imágen
         <input type="text" name="image" id="image" class="text-box" placeholder="URL" required>
       </label>
+
       <label for="poke-type" class="label">Tipo de pokemon
         <input type="text" name="poke-type" id="poke-type" class="text-box" placeholder="Tipo" required>
       </label>
+
       <button id="add-ed-btn" class="btn">Agregar</button>
 
     </form>
@@ -50,8 +54,13 @@
   </template>
 
   <main id="card-cont">
-    <!-- Imágen de ejemplo -->
-    <div class="card">
+    <form class="fil-form">
+      <input type="text" name="filter" id="filter" class="fil-box" placeholder="Filtro" required>
+      <button id="fil-btn" class="fil-btn">Filtrar</button>
+    </form>
+
+     <!-- Imágen de ejemplo -->
+     <div class="card">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" class="card-img">
       <div class="des-cont">
         <h3 class="card-title">bulbasaur</h3>
@@ -60,11 +69,6 @@
         <button id="del-btn" class="del-btn">Eliminar</button>
       </div>
     </div>
-
-    <form class="fil-form">
-      <input type="text" name="filter" id="filter" class="fil-box" placeholder="Filtro" required>
-      <button id="fil-btn" class="fil-btn">Filtrar</button>
-    </form>
 
   </main>
 
