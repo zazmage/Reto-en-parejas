@@ -5,11 +5,12 @@ body{
 
 .title-cont{
     display: flex;
+    box-shadow: 0 0 10px black;
     justify-content: center;
     align-items: center;
     font: bold 2.5rem serif;
-    background: rgb(176, 55, 180);
-    margin: 20px;
+    background:rgba(176, 55, 180, 0.747);
+    
 }
 
 .main-title{
@@ -19,20 +20,28 @@ body{
 
 /* Estilos formulario ---------------------------------- */
 .form-cont{
+    position: relative;
     margin: 20px;
     float: left;
+    width: 30%;
 }
 
 .main-form{
-    display: flex;
+    position: fixed;
     flex-direction: column;
-    background: rgba(255, 0, 0, 0.671);
+    background: rgba(255, 79, 79, 0.911);
     width: 400px;
-    height: 600px;
+    height: 400px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
+    display: none;
+  }
+
+.form-cont:hover .main-form{
+    display: flex;
+    transition: 4s;
   }
 
   .text-box{
@@ -41,7 +50,7 @@ body{
     height: 50px;
     border-radius: 5px;
     border:none;
-    font: bold 1.5rem serif;
+    font: bold 1.2rem serif;
     text-align: center;
     margin-top: 10px;
   }
@@ -80,12 +89,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 70px;
 }
 
 .fil-box{
-    display: flex;
-    height: 20px;
+    width: 40%;
+    height: 30px;
     border-radius: 5px;
     border:2px solid;
     font: bold 1rem serif;
@@ -106,14 +116,12 @@ body{
 /* card---------------------------------------- */
 
 .card{
-    
-    margin-top: 70px;
+    margin: 30px 30px 0px 50px;
     width: 250px;
     background-color:rgb(176, 55, 180);
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     box-shadow: 0 0 10px black;
-    margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -153,4 +161,23 @@ body{
 
 .card-btn:hover{
     background: rgba(88, 78, 88, 0.192);
+}
+
+
+/* ------------------------------------------------------ */
+
+.mainmenubtn {
+    position: fixed;
+    background-color: rgb(106, 106, 167);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding:10px;
+    margin-top:10px;
+    z-index: 9999;
+}
+
+.mainmenubtn:hover {
+    background-color: rgb(158, 158, 192);
 }
