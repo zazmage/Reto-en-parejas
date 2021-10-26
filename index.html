@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/styles/normalize.css">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <title>Aqui va el título</title>
+</head>
+
+<body>
+  <header>
+    <div class="title-cont">
+      <h1 class="main-title">Aqui va el título</h1>
+    </div>
+  </header>
+
+  <aside class="form-cont">
+    <form class="main-form">
+      <div class="form-title-cont">
+        <h2 class="form-title">Agregar</h2>
+      </div>
+
+      <label for="nombre" class="label">Nombre
+        <input type="text" name="name" id="name" class="text-box" placeholder="Nombre" required>
+      </label>
+      <label for="image" class="label">Url imágen
+        <input type="text" name="image" id="image" class="text-box" placeholder="URL" required>
+      </label>
+      <label for="poke-type" class="label">Tipo de pokemon
+        <input type="text" name="poke-type" id="poke-type" class="text-box" placeholder="Tipo" required>
+      </label>
+      <button id="add-ed-btn" class="btn">Agregar</button>
+
+    </form>
+  </aside>
+
+  <template id="card-temp">
+    <div class="card">
+      <img src="" alt="" class="card-img">
+      <div class="des-cont">
+        <h3 class="card-title"></h3>
+        <p class="card-text"></p>
+        <button id="ed-btn" class="ed-btn"></button>
+        <button id="del-btn" class="del-btn"></button>
+      </div>
+    </div>
+  </template>
+
+  <main id="card-cont">
+    <form class="fil-form">
+      <input type="text" name="filter" id="filter" class="fil-box" placeholder="Filtro" required>
+      <button id="fil-btn" class="fil-btn">Filtrar</button>
+    </form>
+
+    <!-- Imágen de ejemplo -->
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" class="card-img">
+      <div class="des-cont">
+        <h3 class="card-title">bulbasaur</h3>
+        <p class="card-text">grass</p>
+        <button id="ed-btn" class="ed-btn">Editar</button>
+        <button id="del-btn" class="del-btn">Eliminar</button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="src/scripts/index.js"></script>
+</body>
+
+</html>
