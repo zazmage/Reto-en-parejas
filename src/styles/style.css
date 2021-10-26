@@ -17,17 +17,14 @@
 /* Estilos formulario ---------------------------------- */
 .form-cont{
     margin: 20px;
-    width: 35vw;
-    height: 97vh;
-    justify-content: center;
-    align-items: center;
+    float: left;
 }
 
 .main-form{
     display: flex;
     flex-direction: column;
     background: rgba(255, 0, 0, 0.671);
-    width: 500px;
+    width: 400px;
     height: 600px;
     align-items: center;
     justify-content: space-evenly;
@@ -76,23 +73,17 @@
 
   /* estilos main --------------------------------------*/
 
-/* .card-cont{
-    margin: 20px;
-    width: 50%;
-    height: 90vh;
-    justify-content: center;
-    align-items: center;
+.card-cont{
+    border:2px solid;
+    width: 700px;
+    padding: 70px;
 }
 
 .fil-form{
     display: flex;
-    background: rgba(255, 0, 0, 0.671);
-    width: 30%;
-    height: 60px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    box-shadow: 0 0 10px black;
+    margin-top: 100px;
 }
 
 .fil-box{
@@ -100,7 +91,7 @@
     width: 200px;
     height: 20px;
     border-radius: 5px;
-    border:none;
+    border:2px solid;
     font: bold 1rem serif;
     text-align: center;
 }
@@ -108,10 +99,57 @@
 .fil-btn{
     width: 100px;
     height: 25px;
+    margin-left: 5px;
     font: bold 1rem serif;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 10px;
     cursor: pointer;
-} */
+}
 
+/* card---------------------------------------- */
+
+.card{
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 200px;
+    background-color:rgb(176, 55, 180);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 0 10px black;
+}
+
+.card-img{
+    max-width: 100%;
+}
+
+.des-cont{
+    width: 300px;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.589);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(176, 55, 180);
+    border-radius: 3px;
+}
+
+.card-title, .card-text{
+    text-align: center;
+    font: bold 1.5rem serif;
+}
+
+.card-btn{
+    width: 80px;
+    height: 30px;
+    font: bold 1rem serif;
+    background: rgba(255, 255, 255, 0.356);
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-btn:hover{
+    background: rgba(88, 78, 88, 0.192);
+}
